@@ -1,14 +1,17 @@
 {
     "compilerOptions": {
         "module": "commonjs",
+        "types": [],
+        "typeRoots": ["node_modules/@types"],
         "moduleResolution": "node",
         "target": "es5",
         "noImplicitAny": false,
         "sourceMap": true,
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
+        "outDir": "dist",
+        "rootDir": "src"
     },
-    "exclude": [
-        "node_modules",
-        "tests"
+    "include": [
+        "src/**/*.ts"
     ]
 }

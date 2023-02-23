@@ -1,13 +1,14 @@
 import * as ts from 'typescript';
 import { TypeHelper } from './typehelper';
 
-export type CType = string | StructType | ArrayType | DictType | FuncType;
+export type CType = CSimpleType | StructType | ArrayType | DictType | FuncType;
+export type CSimpleType = UniversalVarType | VoidType | PointerVarType | StringVarType | NumberVarType | BooleanVarType | RegexVarType | RegexMatchVarType;
 export const UniversalVarType = "struct js_var";
 export const VoidType = "void";
 export const PointerVarType = "void *";
 export const StringVarType = "const char *";
-export const NumberVarType = "int16_t";
-export const BooleanVarType = "uint8_t";
+export const NumberVarType = "float";
+export const BooleanVarType = "char";
 export const RegexVarType = "struct regex_struct_t";
 export const RegexMatchVarType = "struct regex_match_struct_t";
 

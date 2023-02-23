@@ -1,6 +1,6 @@
 import * as ts from 'typescript';
 
-import { CProgram } from './src/program';
+import { CProgram } from './program';
 
 export function transpile(source: string): string {
     var sourceFile = ts.createSourceFile('source.ts', source, ts.ScriptTarget.ES5, true);

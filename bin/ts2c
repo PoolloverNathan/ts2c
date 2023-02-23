@@ -2,7 +2,7 @@
 var path = require('path');
 var fs = require('fs');
 var ts = require('typescript');
-var ts2cprogram = require(path.join(__dirname, "../src/", "program.js"));
+var ts2cprogram = require(path.join(__dirname, "../dist/", "program.js"));
 
 if (process.argv.length < 2)
     process.exit();
